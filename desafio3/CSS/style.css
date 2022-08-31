@@ -1,0 +1,101 @@
+
+html{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+}
+.corpo{
+    display: flex;
+    background-image: url(imagens/bg-repeat.jpg);
+    background-size: 8vh;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+}
+.corpo .orientacoes{
+    width: 325px;
+    margin-right: 73px;
+}
+.corpo .orientacoes h1{
+    font-weight: 900;
+    font-size: 20px;
+    padding-bottom: 11px;
+}
+.corpo .formulario {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    align-items: center;
+    width: 340px;
+    height: 378px;
+    background-color: #fff;
+    padding: 20px;
+    color: black;
+}
+.corpo .formulario .questionario input{
+    padding: 9px;
+    border-radius: 5px;
+    width: 298px;
+    border: 1px solid #ccc;
+    display: block;
+    margin-bottom: 20px;
+    outline: none;    
+}
+.corpo .formulario .questionario textarea{
+    width: 298px;
+    padding: 9px;
+    height: 115px;
+    outline: none;
+    resize: none;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-family: 'Roboto', sans-serif;
+    margin-bottom: 0;
+    display: block;
+}
+.corpo .formulario .questionario small{
+    position: absolute;
+    left: 22px;
+    transform: translateY(-18px);
+    font-size: 8px;
+    color:#F52E2E;
+    visibility: hidden;
+}
+/* Erro --------------------------------------------- */
+.corpo .formulario .questionario.erro input{
+    border: 1px solid #F52E2E; 
+}
+.corpo .formulario .questionario.erro textarea{
+    border: 1px solid #F52E2E; 
+}
+.corpo .formulario .questionario.erro small{
+    visibility: visible;
+}
+/* --------------------------------------------------- */
+/* Sucesso */
+.corpo .formulario .questionario.sucesso input{
+    border: 1px solid #3CCC87; 
+}
+.corpo .formulario .questionario.sucesso textarea{
+    border: 1px solid #3CCC87;
+}
+/* ---------------------------------------------------- */
+.corpo .formulario .enviar h2{
+    font-size: 15px;
+    font-weight: 400;
+}
+.corpo .formulario .enviar input{
+    height: 40px;
+    width: 315px;
+    background-color: #3CCC87;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    font-weight: 700;
+    margin-top: 10px;
+    cursor: pointer;
+}
+.corpo .formulario .enviar:hover input{
+    box-shadow: 3px 3px #999;
+}

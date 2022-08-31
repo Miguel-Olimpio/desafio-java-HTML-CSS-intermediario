@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quest HTML-CSS-JS intermediario </title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="CSS/reset.css">
+    <link rel="stylesheet" href="CSS/style.css">
+</head>
+<body>
+    <main class="corpo">
+        <div class="orientacoes">
+            <h1>Ficou com alguma duvida ? Nos mande uma mensagem!</h1>
+            <p>Caso tenha ficado com qualquer duvida basta nos mandar uma mensagem e entraremos em contato em menos de 24h.</p>
+        </div>
+        <form class="formulario" id="formulario">
+            <div class="questionario">
+                <input class="respostas" type="text" id="nomeusuario" placeholder="Nome Completo *">
+                <small>Campo obrigatório</small>
+            </div>
+            
+            <div class="questionario">
+                <input class="respostas" type="email" id="emailusuario" placeholder="E-Mail *">
+                <small>Campo obrigatório</small>
+            </div>
+
+            <div class="questionario">
+                <input class='respostas' type="tel" id="telefoneusuario" placeholder="Telefone *">
+                <small>Campo obrigatóorio</small>
+            </div>
+
+            <div class="questionario">
+                <textarea class="respostas" id="mensagemusuario" cols="30" rows="10" placeholder="Mensagem *"></textarea><br>
+                <small>Campo obrigatório</small>
+            </div>
+            
+            <div class="enviar">
+                <h2>*campos obrigatórios</h2>
+                <input type="submit" name="envio" id="envios" placeholder="Enviar *">
+            </div>
+        </form>
+        <script type="text/javascript" src="JS/index.js"></script>
+    </main>
+</body>
+</html>
